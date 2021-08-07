@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>OpenCV Java Tutorial Documentation</title>
+  <link rel="stylesheet"
+        href="./styles/style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <!--START OF Technical Documentation Page NavBar-->
+    <div class="main-container__navbar">
+      <nav id="navbar"
+           class="nav-block">
+        <!--<nav class="article-block__header--bg">-->
+          <header class="article-block__header--bg">OpenCV Java Tutorials Documentation</header>
+        <!--</nav>-->
+        <div class="nav-block--fill">
+          <ul class="nav-block__ul">
+            <li class="nav-block__li ">
+              <a class="nav-link nav-link--align-to-left nav-link--bg"
+                 href="#Installing_OpenCV_for_Java">Installing OpenCV for Java</a>
+              <!-- START OF Sublist for Installing OpenCV for Java contents-->
+              <ul class="nav-block__ul">
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#introduction_to_opencv_for_java">Introduction to OpenCV for Java</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#install_the_latest_java_version">Install the latest Java version</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#install_the_latest_eclipse_version">Install the latest Eclipse version</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#install_opencv_3.x_under_windows">Install OpenCV 3.x under Windows</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#install_opencv_3.x_under_mac">Install OpenCV 3.x under macOS</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#install_opencv_3.x_under_linux">Install OpenCV 3.x under Linux</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#setup_opencv_for_java_in_eclipse">Setup OpenCV for Java in Eclipse</a>
+                </li>
+                <li class="nav-block__li">
+                  <a class="nav-link--gray"
+                     href="#setup_opencv_for_java_in_other_ides_experimental">Set up OpenCV for Java in other IDEs
+                    (experimental)</a>
+                </li>
+              </ul>
+              <!-- END OF Sublist for Installing OpenCV for Java contents-->
+            </li>
+            <li class="nav-block__li">
+              <a href="#Your_first_Java_app_with_OpenCV"
+                 class="nav-link nav-link--align-to-left nav-link--bg">
+                Your first Java app with OpenCV
+              </a>
+              <!-- START OF Sublist for "Your first Java app with OpenCV" contents-->
+              <ul class="nav-block__ul">
+                <li class="nav-block__li">
+                  <a href="#a_java_application_with_opencv"
+                     class="nav-link--gray">A Java application with OpenCV</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#what_we_will_do_in_this_tutorial"
+                     class="nav-link--gray">What we will do in this tutorial</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#create_a_new_project"
+                     class="nav-link--gray">Create a New Project</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#add_a_user_library"
+                     class="nav-link--gray">Add a User Library</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#create_a_simple_application"
+                     class="nav-link--gray">Create a simple application</a>
+                </li>
+              </ul>
+              <!-- END OF Sublist for "Your first Java app with OpenCV" contents-->
+            </li>
+            <li class="nav-block__li">
+              <a href="#Your_first_JavaFx_app_with_OpenCV"
+                 class="nav-link nav-link--align-to-left nav-link--bg">
+                Your first JavaFx app with OpenCV
+              </a>
+              <!-- START OF Sublist for Your first JavaFx app with OpenCV contents-->
+              <ul class="nav-block__ul">
+                <li class="nav-block__li">
+                  <a href="#a_javafx_application_with_opencv"
+                     class="nav-link--gray">A JavaFX application with OpenCV</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#what_we_will_do_in_this_tutorial"
+                     class="nav-link--gray">What we will do in this tutorial</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#your_first_application_in_javafx"
+                     class="nav-link--gray">Your First Application in JavaFX</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#installing_e(fx)clipse_plugin_and_scene_builder"
+                     class="nav-link--gray">Installing e(fx)clipse plugin and Scene Builder</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#working_with_scene_builder"
+                     class="nav-link--gray">Working with Scene Builder</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#key_concepts_in_javafx"
+                     class="nav-link--gray">Key concepts in JavaFx</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#managing_gui_interactions_with_other_controller_class"
+                     class="nav-link--gray">Managing GUI Interactions With the Controller Class</a>
+                </li>
+                <li class="nav-block__li">
+                  <a href="#video_capturing"
+                     class="nav-link--gray">Video Capturing</a>
+                </li>
+              </ul>
+              <!-- END OF Sublist for Your first JavaFx app with OpenCV contents-->
+            </li>
+            <li class="nav-block__li">
+              <a href="#OpenCV_Basics"
+                 class="nav-link nav-link--align-to-left nav-link--bg">
+                OpenCV Basics
+              </a>
+              <!-- START OF Sublist for OpenCV Basics contents-->
+              <ul class="nav-block__ul">
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+              </ul>
+              <!-- END OF Sublist for OpenCV Basics contents-->
+            </li>
+            <li class="nav-block__li">
+              <a href="#Face_Detection_and_Tracking"
+                 class="nav-link nav-link--align-to-left nav-link--bg">
+                Face Detection and Tracking
+              </a>
+              <!-- START OF Sublist for Face Detection and Tracking contents-->
+              <ul class="nav-block__ul">
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+                <li class="nav-block__li">
+                  <a href=""
+                     class="nav-link--gray"></a>
+                </li>
+              </ul>
+              <!-- END OF Sublist for Face Detection and Tracking contents-->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--END OF Technical Documentation Page NavBar-->
+
+    <div class="main-container__content">
+      <main id="main-doc"
+            class="main-doc-container">
+        <!--START OF First section: "Installing OpenCV for JAVA"-->
+        <section class="main-section"
+                 id="Installing_OpenCV_for_Java">
+          <header class="main-section__header">
+            Installing OpenCV for Java
+          </header>
+          <article class="main-section__article">
+            <div id="Introduction_to_OpenCV_for_Java"
+                 class="article-block">
+              <h1>Introduction to OpenCV for Java</h1>
+              <p>
+                As of OpenCV 2.4.4, OpenCV supports desktop Java development.
+                This tutorial will help you install OpenCV on your desktop
+                operating system.
+              </p>
+            </div>
+            <div id="install_the_latest_java_version"
+                 class="article-block">
+              <h1>Install the latest Java version</h1>
+              <p>
+                Download the latest Java JDK from the
+                <a class="article-block__link"
+                   href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+                   target="_blank"
+                   rel="noopener noreferrer">Oracle</a>
+                website. Now you should be able to install the last Java JDK
+                by opening the file just downloaded.
+              </p>
+            </div>
+            <div id="install_the_latest_eclipse_version"
+                 class="article-block">
+              <h1>Install the latest Eclipse version</h1>
+              <p>
+                Download the latest Eclipse version at the
+                <span>
+                  <a class="article-block__link"
+                     href="https://www.eclipse.org/downloads/packages/"
+                     target="_blank"
+                     rel="noopener noreferrer">Eclipse Download page</a>
+                </span>
+                choosing the
+                <code>Eclipse IDE for Java Developers</code>
+                version (suggested).
+              </p>
+              <p>
+                Extract the downloaded compressed file and put the resulting
+                folder wherever you want to. You don’t need to install
+                anything. Alternatively, you can try the Eclipse installer.
+              </p>
+            </div>
+            <div id="install_opencv_3.x_under_windows"
+                 class="article-block">
+              <h1>Install OpenCV 3.x under Windows</h1>
+              <p>
+                First of all you should download the OpenCV library (version
+                3.x) from
+                <a class="article-block__link"
+                   href="http://opencv.org/releases.html"
+                   target="_blank"
+                   rel="noopener noreferrer">here</a>.
+              </p>
+              <p>
+                Then, extract the downloaded OpenCV file in a location of your
+                choice. Once you get the folder
+                <code>opencv</code> put in wherever you prefer.
+              </p>
+              <p>
+                Now the only two things that you will need are: the
+                <code>opencv-3xx.jar</code> file located at
+                <code>\opencv\build\java</code>
+                and the
+                <code>opencv_java3xx.dll</code>
+                library located at
+                <code>\opencv\build\java\x64</code>
+                (for 64-bit systems) or
+                <code>\opencv\build\java\x86</code>
+                (for 32-bit systems). The 3xx suffix of each file is a
+                shortcut for the current OpenCV version, e.g., it will be 300
+                for OpenCV 3.0 and 330 for OpenCV 3.3.
+              </p>
+            </div>
+            <div id="install_opencv_3.x_under_mac"
+                 class="article-block">
+              <h1>Install OpenCV 3.x under macOS</h1>
+              <p>
+                The quickest way to obtain OpenCV under macOS is to use
+                <a class="article-block__link"
+                   href="https://brew.sh/"
+                   target="_blank"
+                   rel="noopener noreferrer">Homebrew</a>
+                . After installing Homebrew, you have to check whether the
+                XCode Command Line Tools are already installed on your system.
+              </p>
+              <p>
+                To do so, open the Terminal and execute:
+                <code>xcode-select --install</code>
+                If macOS asks for installing such tools, proceed with the
+                download and installation. Otherwise, continue with the OpenCV
+                installation.
+              </p>
+              <p>
+                As a prerequisite, check that Apache Ant is installed.
+                Otherwise, install it with Homebrew:
+                <code>brew install ant</code>. Ant should be available at
+                <code>/usr/local/bin/ant</code>.
+              </p>
+              <p>
+                To install OpenCV (with Java support) through Homebrew, you
+                need to edit the opencv formula in Homebrew, to add support
+                for Java:
+                <code class="article-code__block">brew edit opencv</code> In
+                the text editor that will open, change the line:
+                <code>-DBUILD_opencv_java=OFF</code>
+                in
+                <code>-DBUILD_opencv_java=ON</code>
+                then, after saving the file, you can effectively install
+                OpenCV:
+                <code>brew install --build-from-source opencv</code>
+              </p>
+              <p>
+                After the installation of OpenCV, the needed jar file and the
+                dylib library will be located at
+                <code>/usr/local/Cellar/opencv/3.x.x/share/OpenCV/java/</code>, e.g.,
+                <code>/usr/local/Cellar/opencv/3.3.1/share/OpenCV/java/</code>.
+              </p>
+              <p>
+                Please, notice that this method doesn’t work if you update
+                OpenCV from a previous version: you need to uninstall OpenCV
+                and install it again.
+              </p>
+            </div>
+            <div id="install_opencv_3.x_under_linux"
+                 class="article-block">
+              <h1>Install OpenCV 3.x under Linux</h1>
+              <p>
+                Please, note: the following instructions are also useful if
+                you want to compile OpenCV under Windows or macOS. Linux
+                package management systems (apt-get, yum, etc.) may provide
+                the needed version of the OpenCV library.
+              </p>
+              <p>
+                As first step, download and install
+                <a class="article-block__link"
+                   href="https://cmake.org/download/"
+                   target="_blank"
+                   rel="noopener noreferrer">CMake</a>
+                and
+                <a class="article-block__link"
+                   href="http://ant.apache.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">Apache Ant</a>
+                , if you don’t have any of these. Download the OpenCV library
+                from
+                <a class="article-block__link"
+                   href="https://opencv.org/releases/"
+                   target="_blank"
+                   rel="noopener noreferrer">its website</a>
+                . Extract the downloaded OpenCV file in a location of your
+                choice and open CMake ( cmake-gui ). Put the location of the
+                extracted OpenCV library in the
+                <code>Where is the source code field</code>
+                (e.g., /opencv/) and insert the destination directory of your
+                build in the
+                <code>Where to build the binaries field</code>
+                (e.g., /opencv/build). At last, check the
+                <code>Grouped</code> and <code>Advanced</code> checkboxes.
+              </p>
+              <div class="container-for-img">
+                <img class="article-block__img"
+                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-00.png"
+                     alt="" />
+              </div>
+
+              <p>
+                Now press Configure and use the default compilers for Unix
+                Makefiles. Please, be sure to have installed a C/C++ compiler.
+                In the Ungrouped Entries group, insert the path to the Apache
+                Ant executable (e.g., /apache-ant-1.9.6/bin/ant). In the BUILD
+                group, unselect:
+              </p>
+              <ul class="article-block__ul">
+                <li class="article-block__li">
+                  <code>BUILD_PERF_TESTS</code>
+                </li>
+                <li class="article-block__li">
+                  <code>BUILD_SHARED_LIBRARY</code>
+                  to make the Java bindings dynamic library all-sufficient
+                </li>
+                <li class="article-block__li">
+                  <code>BUILD_TESTS</code>
+                </li>
+                <li class="article-block__li">
+                  <code>BUILD_opencv_python</code>
+                </li>
+              </ul>
+              <p>
+                <code>BUILD_opencv_python</code>
+                In the <code>CMAKE</code> group, set to <code>Debug</code> (or
+                <code>Release</code>) the
+                <code>CMAKE_BUILD_TYPE</code>
+              </p>
+              <p>In the JAVA group:</p>
+              <ul class="article-block__ul">
+                <li class="article-block__li">
+                  insert the Java AWT include path (e.g.,
+                  <code>/usr/lib/jvm/java-1.8.0/include/</code>)
+                </li>
+                <li class="article-block__li">
+                  insert the Java AWT library path (e.g.,
+                  <code>/usr/lib/jvm/java-1.8.0/include/jawt.h</code>
+                </li>
+                <li class="article-block__li">
+                  insert the Java include path (e.g.,
+                  <code>/usr/lib/jvm/java-1.8.0/include/</code>)
+                </li>
+                <li class="article-block__li">
+                  insert the alternative Java include path (e.g.,
+                  <code>/usr/lib/jvm/java-1.8.0/include/linux</code>)
+                </li>
+                <li class="article-block__li">
+                  insert the JVM library path (e.g.,
+                  <code>/usr/lib/jvm/java-1.8.0/include/jni.h</code>)
+                </li>
+              </ul>
+              <p>
+                Press
+                <code>Configure</code> twice, and the CMake window should
+                appear with a white background. If not, fix the red lines and
+                press <code>Configure</code> again. Now, press
+                <code>Generate</code> and close CMake.
+              </p>
+              <div class="container-for-img">
+                <img class="article-block__img"
+                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-01.png"
+                     alt="" />
+              </div>
+
+              <p>
+                Now open the terminal, go to the
+                <code>build</code> folder of OpenCV and compile everything
+                with the command: <code>make -j</code>. Notice that the -j
+                flag tells make to run in parallel with the maximum number of
+                allowed job threads, which makes the build theoretically
+                faster. Wait for the process to be completed... If everything
+                went well you should have <code>opencv-3xx.jar</code> in the
+                <code>/opencv/build/bin</code>
+                directory and
+                <code>libopencv_java3xx.so</code>
+                in the
+                <code>/opencv/build/lib</code>
+                directory. The 3xx suffix of each file is a shortcut for the
+                current OpenCV version, e.g., it will be 300 for OpenCV 3.0
+                and 330 for OpenCV 3.3. This is everything you need.
+              </p>
+            </div>
+            <div id="setup_opencv_for_java_in_eclipse"
+                 class="article-block">
+              <h1>Set up OpenCV for Java in Eclipse</h1>
+              <p>
+                Open Eclipse and select a workspace of your choice. Create a
+                User Library, ready to be used on all your next projects: go
+                to
+                <code>Window > Preferences...</code>.
+              </p>
+              <div class="container-for-img">
+                <img class="article-block__img"
+                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-02.png"
+                     alt="" />
+              </div>
+
+              <p>
+                From the menu navigate under
+                <code>Java > Build Path > User Libraries</code>
+                and choose <code></code>New.... Enter a name for the library
+                (e.g., opencv) and select the newly created user library.
+                Choose <code>Add External JARs...</code>, browse to select
+                <code>opencv-3xx.jar</code> from your computer. After adding
+                the jar, extend it, select
+                <code>Native library location</code>
+                and press <code>Edit...</code>.
+              </p>
+              <div class="container-for-img">
+                <img class="article-block__img"
+                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-03.png"
+                     alt="" />
+              </div>
+
+              <p>
+                Select
+                <code>External Folder...</code>
+                and browse to select the folder containing the OpenCV
+                libraries (e.g.,
+                <code>C:\opencv\build\java\x64</code>
+                under Windows).
+              </p>
+              <p>
+                In case of MacOS, if you installed OpenCV without Homebrew,
+                you need to create a soft link with .dylib extension for the
+                .so file. E.g., from the terminal, type:
+                <code>ln -s libopencv_java300.so libopencv_java300.dylib</code>
+              </p>
+            </div>
+            <div id="setup_opencv_for_java_in_other_ides_experimental"
+                 class="article-block">
+              <h1>Set up OpenCV for Java in other IDEs (experimental)</h1>
+              <p>
+                If you are using IntelliJ, you can specify the location of the
+                library with the VM argument
+                <code>-Djava.library.path=/opencv/build/lib</code>.
+              </p>
+            </div>
+          </article>
+        </section>
+        <!--END OF First section: "Installing OpenCV for JAVA"-->
+
+        <!--START OF Second section: "Your first Java app with OpenCV"-->
+        <section class="main-section"
+                 id="Your_first_Java_app_with_OpenCV">
+          <header class="main-section__header">
+            Your first Java app with OpenCV
+          </header>
+          <div id="a_java_application_with_opencv"
+               class="article-block">
+            <h1>A Java Application with OpenCV</h1>
+            <p>
+              This tutorial will guide you through the creation of a simple
+              Java console application using the OpenCV library in Eclipse.
+            </p>
+          </div>
+          <div id="what_we_will_do_in_this_tutorial"
+               class="article-block">
+            <h1>What we will do in this tutorial</h1>
+            <p><strong>In this guide, we will:</strong></p>
+            <ul>
+              <li>Create a new Java Project</li>
+              <li>Add a User Library to the project</li>
+              <li>Write some OpenCV code</li>
+              <li>Build and Run the application</li>
+            </ul>
+          </div>
+          <div id="create_a_new_project"
+               class="article-block">
+            <h1>Create a New Project</h1>
+            <p>
+              Open Eclipse and create a new Java project; open the
+              <code>File</code> menu, go to <code>New</code> and click on
+              <code>Java Project</code>.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-00.png"
+                 alt="Create new java project in eclipse" />
+            <p>
+              In the
+              <code>New Java Project</code> dialog write the name of your
+              project and click on <code>Finish</code>.
+            </p>
+          </div>
+          <div id="add_a_user_library"
+               class="article-block">
+            <h1>Add a User Library</h1>
+            <p>
+              If you followed the previous tutorial (<code>Installing OpenCV for Java</code>), you should already have
+              the OpenCV library set in your
+              workspace’s user libraries; if not please check out the previous
+              tutorial. Now you should be ready to add the library to your
+              project. Inside Eclipse’s <code>Package Explorer</code> just
+              right-click on your project’s folder and go to
+              <code>Build Path --> Add Libraries...</code>.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-01.png"
+                 alt="Add library to project" />
+            <p>
+              Select <code>User Libraries</code> and click on
+              <code>Next</code>, check the checkbox of the OpenCV library and
+              click <code>Finish</code>.
+            </p>
+            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-02.png"
+                 alt="Select OpenCV user libary" />
+          </div>
+          <div id="create_a_simple_application"
+               class="article-block">
+            <h1>Create a simple application</h1>
+            <p>
+              Now add a new Class to your project by right-clicking on your
+              project’s folder and go to <code>New --> Class</code>. Write a
+              name of your choice for both the package and the class then
+              click on <code>Finish</code>. Now we are ready to write the code
+              of our first application. Let’s start by defining the
+              <code>main</code> method:
+            </p>
+            <pre class="article-block__code black">
+
+  public class HelloCV {
+      public static void main(String[] args){
+          System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+              Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);
+                  System.out.println("mat = " + mat.dump());
+      }
+  }
+              </pre>
+            <p>
+              First of all we need to load the OpenCV Native Library
+              previously set on our project.
+            </p>
+            <pre class="article-block__code black padding">
+System.loadLibrary(Core.NATIVE_LIBRARY_NAME);</pre>
+            <p>Then we can define a new Mat.</p>
+            <note>
+              <p class="article-block__note">
+                The class Mat represents an n-dimensional dense numerical
+                single-channel or multi-channel array. It can be used to store
+                real or complex-valued vectors and matrices, grayscale or
+                color images, voxel volumes, vector fields, point clouds,
+                tensors, histograms. For more details check out the OpenCV
+                <a class="article-block__link"
+                   href="http://docs.opencv.org/3.0.0/dc/d84/group__core__basic.html"
+                   target="_blank"
+                   rel="noopener noreferrer">page</a>.
+              </p>
+            </note>
+            <pre class="article-block__code black padding">
+Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);</pre>
+            <p>
+              The <code>Mat.eye</code> represents a identity matrix, we set
+              the dimensions of it (3x3) and the type of its elements.
+            </p>
+            <p>
+              As you can notice, if you leave the code just like this, you
+              will get some error; this is due to the fact that eclipse can’t
+              resolve some variables. You can locate your mouse cursor on the
+              words that seem to be errors and wait for a dialog to pop up and
+              click on the voice <code>Import...</code>. If you do that for
+              all the variables we have added to the code the following rows:
+            </p>
+            <pre class="article-block__code black padding">
+import org.opencv.core.Core;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;</pre>
+            <p>
+              We can now try to build and run our application by clicking on
+              the Run button. You should have the following output:
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-03.png"
+                 alt="My first Java app with OpenCV output" />
+            <p>
+              The whole source code is available on
+              <a class="article-block__link"
+                 href="https://github.com/opencv-java/getting-started/blob/master/HelloCV/"
+                 target="_blank"
+                 rel="noopener noreferrer">GitHub</a>.
+            </p>
+          </div>
+        </section>
+        <!--END OF Second section: "Your first Java app with OpenCV"-->
+
+        <!--START OF Third section: "Your first JavaFx app with OpenCV"-->
+        <section class="main-section"
+                 id="Your_first_JavaFx_app_with_OpenCV">
+          <header class="main-section__header">
+            Your first JavaFx app with OpenCV
+          </header>
+          <div id="a_javafx_application_with_opencv"
+               class="article-block">
+            <h1>A JavaFX application with OpenCV</h1>
+            <p>
+              This tutorial will guide you through the creation of a simple
+              JavaFX GUI application using the OpenCV library in Eclipse.
+            </p>
+          </div>
+          <div id="what_we_will_do_in_this_tutorial"
+               class="article-block">
+            <h1>What we will do in this tutorial</h1>
+            <p><strong>In this guide, we will:</strong></p>
+            <ul>
+              <li>
+                Install the <code>e(fx)clipse</code> plugin and (optionally)
+                Scene Builder.
+              </li>
+              <li>Work with Scene Builder.</li>
+              <li>Write and Run our application.</li>
+            </ul>
+          </div>
+          <div id="your_first_application_in_javafx"
+               class="article-block">
+            <h1>Your First Application in JavaFX</h1>
+            <p>
+              This tutorial will guide you through the creation of a simple
+              JavaFX GUI application using the OpenCV library in Eclipse.
+            </p>
+          </div>
+
+          <div id="installing_e(fx)clipse_plugin_and_scene_builder"
+               class="article-block">
+            <h1>Installing e(fx)clipse plugin and Scene Builder</h1>
+            <p>
+              In Eclipse, install the e(fx)clipse plugin, by following the
+              guide at
+              <a class="article-block__link"
+                 href="http://www.eclipse.org/efxclipse/install.html#fortheambitious"
+                 target="_blank"
+                 rel="noopener noreferrer">e(fx)clipse website</a>. If you choose not to install such a plugin, you have
+              to
+              create a traditional Java project, only. Download and install
+              JavaFX Scene Builder 2.0 from
+              <a class="article-block__link"
+                 href="http://www.oracle.com/technetwork/java/javafxscenebuilder-1x-archive-2199384.html"
+                 target="_blank"
+                 rel="noopener noreferrer">JavaFX Scene Builder Archive</a>.
+            </p>
+            <p>
+              Now you can create a new JavaFX project.
+              <code>Go to File > New > Project...</code> and select
+              <code>JavaFX project...</code>.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-00.png"
+                 alt="New Eclipse project" />
+            <p>Choose a name for your project and click <code>Next</code>.</p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-01.png"
+                 alt="" />
+            <p>
+              Now add your OpenCV user library to your project and click
+              <code>Next</code>.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-02.png"
+                 alt="" />
+            <p>
+              Choose a name for your package, for the FXML file and for the
+              <em>Controller Class</em>. The FXML file will contain the
+              description of your GUI in FXML language, while the
+              <em>Controller Class</em> will handle all the method and event
+              which have to be called and managed when the user interacts with
+              the GUI’s components.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-03.png"
+                 alt="" />
+          </div>
+
+          <div id="working_with_scene_builder"
+               class="article-block">
+            <h1>Working with Scene Builder</h1>
+            <p>
+              If you have installed <em>Scene Builder</em> you can now right
+              click on your <em>FXML file</em> in Eclipse and select
+              <code>Open with SceneBuilder</code>. <em>Scene Builder</em> can
+              help construct you gui by interacting with a graphic interface;
+              this allows you to see a real time preview of your window and
+              modify your components and their position just by editing the
+              graphic preview. Let’s take a look at what I’m talking about. At
+              fist the <em>FXML file</em> will have just an
+              <em>AnchorPane</em>. An <em>AnchorPane</em> allows the edges of
+              child nodes to be anchored to an offset from the anchorpane’s
+              edges. If the anchorpane has a border and/or padding set, the
+              offsets will be measured from the inside edge of those insets.
+              The anchorpane lays out each managed child regardless of the
+              child’s visible property value; unmanaged children are ignored
+              for all layout calculations. You can go ahead and delete the
+              anchorpane and add a <em>BorderPane</em> instead. A
+              <em>BorderPane</em> lays out children in top, left, right,
+              bottom, and center positions.
+            </p>
+            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-04.png"
+                 alt=""
+                 class="article-block__img" />
+            <p>
+              You can add a BorderPane by dragging from the
+              <code>Container</code> menu a borderpane and then drop it in the
+              <code>Hierarchy</code> menu. Now we can add the button that will
+              allow us to start and stop the stream. Take a button component
+              from the <code>Controls</code> menu and drop it on the
+              <strong>BOTTOM</strong> field of our BP. As we can see, on the
+              right we will get three menus (Properties, Layout, Code) which
+              are used to customize our selected component. For example we can
+              change text of our button in “Start Camera” in the
+              <code>Text</code> field under the <code>Properties</code> menu
+              and the id of the button (e.g. “start_btn”) in the
+              <code>fx:id</code> field under the <code>Code</code> menu.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-05.png"
+                 alt="" />
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-06.png"
+                 alt="" />
+            <p>
+              We are going to need the id of the button later, in order to
+              edit the button properties from our <em>Controller</em>‘s
+              methods. As you can see our button is too close to the edge of
+              the windows, so we should add some bottom margin to it; to do so
+              we can add this information in the <code>Layout</code> menu. In
+              order to make the button work, we have to set the name of the
+              method (e.g. “startCamera”) that will execute the action we want
+              to preform in the field <code>OnAction</code> under the
+              <code>Code</code> menu.
+            </p>
+            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-07.png"
+                 alt=""
+                 class="article-block__img" />
+            <p>
+              Now, we shall add an ImageView component from the
+              <code>Controls</code> menu into the
+              <strong>CENTER</strong> field of our BP. Let’s also edit the id
+              of the image view (e.g. “currentFrame”), and add some margin to
+              it.
+            </p>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-08.png"
+                 alt="" />
+            <p>
+              Finally we have to tell which Controller class will mange the
+              GUI, we can do so by adding our controller class name in the
+              <code>Controller class</code> field under the
+              <code>Controller</code> menu located in the bottom left corner
+              of the window.
+            </p>
+            <p>
+              We just created our first GUI by using Scene Builder, if you
+              save the file and return to Eclipse you will notice that some
+              FXML code has been generated automatically.
+            </p>
+          </div>
+
+          <div id="key_concepts_in_javafx"
+               class="article-block">
+            <h1>Key Concepts in JavaFX</h1>
+            <p>
+              The <strong>Stage</strong> is where the application will be
+              displayed (e.g., a Windows’ window). A Scene is one container of
+              Nodes that compose one “page” of your application. A Node is an
+              element in the Scene, with a visual appearance and an
+              interactive behavior. Nodes may be hierarchically nested . In
+              the Main class we have to pass to the start function our primary
+              stage:
+            </p>
+            <pre class="article-block__code black padding">
+public void start(Stage primaryStage)</pre>
+            <p>
+              and load the fxml file that will populate our stage, the root
+              element of the scene and the controller class:
+            </p>
+            <pre class="article-block__code black padding">
+FXMLLoader loader = new FXMLLoader(getClass().getResource("FXHelloCV.fxml"));
+BorderPane root = (BorderPane) loader.load();
+FXController controller = loader.getController();</pre>
+          </div>
+          <div id="managing_gui_interactions_with_other_controller_class"
+               class="article-block">
+            <h1>Managing GUI Interactions With the Controller Class</h1>
+            <p>
+              For our application we need to do basically two thing: control
+              the button push and the refreshment of the image view. To do so
+              we have to create a reference between the gui components and a
+              variable used in our controller class:
+            </p>
+            <pre class="article-block__code black padding">
+@FXML
+private Button button;
+@FXML
+private ImageView currentFrame;</pre>
+            <p>
+              The <code>@FXML</code> tag means that we are linking our
+              variable to an element of the fxml file and the value used to
+              declare the variable has to equal to the id set for that
+              specific element.
+            </p>
+            <p>
+              The <code>@FXML</code> tag is used with the same meaning for the
+              Actions set under the Code menu in a specific element.
+            </p>
+            <p>for:</p>
+            <pre
+                 class="article-block__code black padding overflow"><span><</span>Button fx:id="button" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="CENTER"<span>></span></pre>
+            <p>we set:</p>
+            <pre class="article-block__code black padding">
+@FXML
+protected void startCamera(ActionEvent event) { ...</pre>
+          </div>
+          <div id="video_capturing"
+               class="article-block">
+            <h1>Video Capturing</h1>
+            <p>
+              Essentially, all the functionalities required for video
+              manipulation is integrated in the VideoCapture class.
+            </p>
+            <pre class="article-block__code black padding">
+private VideoCapture capture = new VideoCapture();</pre>
+            <p>
+              This on itself builds on the FFmpeg open source library. A video
+              is composed of a succession of images, we refer to these in the
+              literature as frames. In case of a video file there is a frame
+              rate specifying just how long is between two frames. While for
+              the video cameras usually there is a limit of just how many
+              frames they can digitalize per second. In our case we set as
+              frame rate 30 frames per sec. To do so we initialize a timer
+              (i.e., a <code>`ScheduledExecutorService`</code>) that will open
+              a background task every 33 <em>milliseconds</em>.
+            </p>
+            <pre class="article-block__code black padding">
+Runnable frameGrabber = new Runnable() { ... }
+this.timer = Executors.newSingleThreadScheduledExecutor();
+this.timer.scheduleAtFixedRate(frameGrabber, 0, 33, TimeUnit.MILLISECONDS);</pre>
+            <p>
+              To check if the binding of the class to a video source was
+              successful or not use the isOpened function:
+            </p>
+            <pre class="article-block__code black padding">
+if (this.capture.isOpened()) { ... }</pre>
+            <p>
+              Closing the video is automatic when the objects destructor is
+              called. However, if you want to close it before this you need to
+              call its release function.
+            </p>
+            <pre class="article-block__code black padding">
+this.capture.release();</pre>
+            <p>
+              The frames of the video are just simple images. Therefore, we
+              just need to extract them from the VideoCapture object and put
+              them inside a Mat one.
+            </p>
+            <pre class="article-block__code black padding">
+Mat frame = new Mat();</pre>
+            <p>
+              The video streams are sequential. You may get the frames one
+              after another by the read or the overloaded >> operator.
+            </p>
+            <pre class="article-block__code black padding">
+this.capture.read(frame);</pre>
+            <p>
+              Now we are going to convert our image from BGR to Grayscale
+              format. OpenCV has a really nice function to do this kind of
+              transformations:
+            </p>
+            <pre class="article-block__code black padding">
+Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2GRAY);</pre>
+            <p>
+              <strong>As you can see, cvtColor takes as arguments:</strong>
+            </p>
+            <ul>
+              <li>a source image (frame)</li>
+              <li>
+                a destination image (frame), in which we will save the
+                converted image.
+              </li>
+              <li>
+                an additional parameter that indicates what kind of
+                transformation will be performed. In this case we use
+                <code>COLOR_BGR2GRAY</code> (because of
+                <code>imread</code> has BGR default channel order in case of
+                color images).
+              </li>
+            </ul>
+            <p>
+              Now in order to put the captured frame into the ImageView we
+              need to convert the Mat in a Image. We first create a buffer to
+              store the Mat.
+            </p>
+            <pre class="article-block__code black padding">
+MatOfByte buffer = new MatOfByte();</pre>
+            <p>
+              Then we can put the frame into the buffer by using the imencode
+              function:
+            </p>
+            <pre class="article-block__code black padding">
+Imgcodecs.imencode(".png", frame, buffer);</pre>
+            <p>
+              This encodes an image into a memory buffer. The function
+              compresses the image and stores it in the memory buffer that is
+              resized to fit the result.
+            </p>
+            <note>
+              <p class="article-block__note">
+                <code class="article-block__code--white-bg">imencode</code>
+                returns single-row matrix of type
+                <code class="article-block__code--white-bg">CV_8UC1</code>
+                that contains encoded image as array of bytes.
+              </p>
+            </note>
+            <p><strong>It takes three parameters:</strong></p>
+            <ul>
+              <li>(”.png”) File extension that defines the output format.</li>
+              <li>(frame) Image to be written.</li>
+              <li>
+                (buffer) Output buffer resized to fit the compressed image.
+              </li>
+            </ul>
+            <p>
+              Once we filled the buffer we have to stream it into an Image by
+              using <code>ByteArrayInputStream</code>:
+            </p>
+            <pre class="article-block__code black padding">
+new Image(new ByteArrayInputStream(buffer.toArray()));</pre>
+            <p>
+              Now we can put the new image in the ImageView. With
+              <em>Java 1.8</em> we cannot perform an update of a GUI element
+              in a thread that differs from the main thread; so we need to get
+              the new frame in a second thread and refresh our ImageView in
+              the main thread:
+            </p>
+            <pre class="article-block__code black padding">
+Image imageToShow = grabFrame();
+Platform.runLater(new Runnable() {
+        @Override public void run() { currentFrame.setImage(imageToShow); }
+});</pre>
+            <img class="article-block__img"
+                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-09.png"
+                 alt="JavaFx meets OpenCV" />
+            <p>
+              The source code of the entire tutorial is available on
+              <a class="article-block__link"
+                 href="GitHub"
+                 target="_blank"
+                 rel="noopener noreferrer">GitHub</a>.
+            </p>
+          </div>
+        </section>
+        <!--END OF Third section: "Your first JavaFx app with OpenCV"-->
+
+        <!--START OF Fourth section: "OpenCV Basics"-->
+        <section class="main-section"
+                 id="OpenCV_Basics">
+          <header class="main-section__header">OpenCV Basics</header>
+        </section>
+        <!--END OF Fourth section: "OpenCV Basics"-->
+
+        <!--START OF Fifth section: "Face Dectection and Tracking"-->
+        <section class="main-section"
+                 id="Face_Detection_and_Tracking">
+          <header class="main-section__header">
+            Face Detection and Tracking
+          </header>
+        </section>
+        <!--END OF Fifth section: "Face Dectection and Tracking"-->
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
+
