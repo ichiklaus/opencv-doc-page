@@ -3,203 +3,176 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible"
-        content="IE=edge" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenCV Java Tutorial Documentation</title>
-  <link rel="stylesheet"
-        href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
   <div class="main-container">
     <!--START OF Technical Documentation Page NavBar-->
     <div class="main-container__navbar">
-      <nav id="navbar"
-           class="nav-block">
+      <nav id="navbar" class="nav-block">
         <!--<nav class="article-block__header--bg">-->
-          <header class="article-block__header--bg">OpenCV Java Tutorials Documentation</header>
+        <header class="article-block__header--bg">
+          OpenCV Java Tutorials Documentation
+        </header>
         <!--</nav>-->
         <div class="nav-block--fill">
           <ul class="nav-block__ul">
-            <li class="nav-block__li ">
-              <a class="nav-link nav-link--align-to-left nav-link--bg"
-                 href="#Installing_OpenCV_for_Java">Installing OpenCV for Java</a>
+            <li class="nav-block__li">
+              <a class="nav-link nav-link--align-to-left nav-link--bg" href="#Installing_OpenCV_for_Java">Installing OpenCV for
+                Java</a>
               <!-- START OF Sublist for Installing OpenCV for Java contents-->
               <ul class="nav-block__ul">
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#introduction_to_opencv_for_java">Introduction to OpenCV for Java</a>
+                  <a class="nav-link--gray" href="#introduction_to_opencv_for_java">Introduction to OpenCV for Java</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#install_the_latest_java_version">Install the latest Java version</a>
+                  <a class="nav-link--gray" href="#install_the_latest_java_version">Install the latest Java version</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#install_the_latest_eclipse_version">Install the latest Eclipse version</a>
+                  <a class="nav-link--gray" href="#install_the_latest_eclipse_version">Install the latest Eclipse
+                    version</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#install_opencv_3.x_under_windows">Install OpenCV 3.x under Windows</a>
+                  <a class="nav-link--gray" href="#install_opencv_3.x_under_windows">Install OpenCV 3.x under
+                    Windows</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#install_opencv_3.x_under_mac">Install OpenCV 3.x under macOS</a>
+                  <a class="nav-link--gray" href="#install_opencv_3.x_under_mac">Install OpenCV 3.x under macOS</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#install_opencv_3.x_under_linux">Install OpenCV 3.x under Linux</a>
+                  <a class="nav-link--gray" href="#install_opencv_3.x_under_linux">Install OpenCV 3.x under Linux</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#setup_opencv_for_java_in_eclipse">Setup OpenCV for Java in Eclipse</a>
+                  <a class="nav-link--gray" href="#setup_opencv_for_java_in_eclipse">Setup OpenCV for Java in
+                    Eclipse</a>
                 </li>
                 <li class="nav-block__li">
-                  <a class="nav-link--gray"
-                     href="#setup_opencv_for_java_in_other_ides_experimental">Set up OpenCV for Java in other IDEs
-                    (experimental)</a>
+                  <a class="nav-link--gray" href="#setup_opencv_for_java_in_other_ides_experimental">Set up OpenCV for
+                    Java in other IDEs (experimental)</a>
                 </li>
               </ul>
               <!-- END OF Sublist for Installing OpenCV for Java contents-->
             </li>
             <li class="nav-block__li">
-              <a href="#Your_first_Java_app_with_OpenCV"
-                 class="nav-link nav-link--align-to-left nav-link--bg">
+              <a href="#Your_first_Java_app_with_OpenCV" class="nav-link nav-link--align-to-left nav-link--bg nav-link--bg">
                 Your first Java app with OpenCV
               </a>
               <!-- START OF Sublist for "Your first Java app with OpenCV" contents-->
               <ul class="nav-block__ul">
                 <li class="nav-block__li">
-                  <a href="#a_java_application_with_opencv"
-                     class="nav-link--gray">A Java application with OpenCV</a>
+                  <a href="#a_java_application_with_opencv" class="nav-link--gray">A Java application with OpenCV</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#what_we_will_do_in_this_tutorial"
-                     class="nav-link--gray">What we will do in this tutorial</a>
+                  <a href="#what_we_will_do_in_this_tutorial" class="nav-link--gray">What we will do in this
+                    tutorial</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#create_a_new_project"
-                     class="nav-link--gray">Create a New Project</a>
+                  <a href="#create_a_new_project" class="nav-link--gray">Create a New Project</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#add_a_user_library"
-                     class="nav-link--gray">Add a User Library</a>
+                  <a href="#add_a_user_library" class="nav-link--gray">Add a User Library</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#create_a_simple_application"
-                     class="nav-link--gray">Create a simple application</a>
+                  <a href="#create_a_simple_application" class="nav-link--gray">Create a simple application</a>
                 </li>
               </ul>
               <!-- END OF Sublist for "Your first Java app with OpenCV" contents-->
             </li>
             <li class="nav-block__li">
-              <a href="#Your_first_JavaFx_app_with_OpenCV"
-                 class="nav-link nav-link--align-to-left nav-link--bg">
+              <a href="#Your_first_JavaFx_app_with_OpenCV" class="nav-link nav-link--align-to-left nav-link--bg">
                 Your first JavaFx app with OpenCV
               </a>
               <!-- START OF Sublist for Your first JavaFx app with OpenCV contents-->
               <ul class="nav-block__ul">
                 <li class="nav-block__li">
-                  <a href="#a_javafx_application_with_opencv"
-                     class="nav-link--gray">A JavaFX application with OpenCV</a>
+                  <a href="#a_javafx_application_with_opencv" class="nav-link--gray">A JavaFX application with
+                    OpenCV</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#what_we_will_do_in_this_tutorial"
-                     class="nav-link--gray">What we will do in this tutorial</a>
+                  <a href="#what_we_will_do_in_this_tutorial" class="nav-link--gray">What we will do in this
+                    tutorial</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#your_first_application_in_javafx"
-                     class="nav-link--gray">Your First Application in JavaFX</a>
+                  <a href="#your_first_application_in_javafx" class="nav-link--gray">Your First Application in
+                    JavaFX</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#installing_e(fx)clipse_plugin_and_scene_builder"
-                     class="nav-link--gray">Installing e(fx)clipse plugin and Scene Builder</a>
+                  <a href="#installing_e(fx)clipse_plugin_and_scene_builder" class="nav-link--gray">Installing
+                    e(fx)clipse plugin and Scene Builder</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#working_with_scene_builder"
-                     class="nav-link--gray">Working with Scene Builder</a>
+                  <a href="#working_with_scene_builder" class="nav-link--gray">Working with Scene Builder</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#key_concepts_in_javafx"
-                     class="nav-link--gray">Key concepts in JavaFx</a>
+                  <a href="#key_concepts_in_javafx" class="nav-link--gray">Key concepts in JavaFx</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#managing_gui_interactions_with_other_controller_class"
-                     class="nav-link--gray">Managing GUI Interactions With the Controller Class</a>
+                  <a href="#managing_gui_interactions_with_other_controller_class" class="nav-link--gray">Managing GUI
+                    Interactions With the Controller Class</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href="#video_capturing"
-                     class="nav-link--gray">Video Capturing</a>
+                  <a href="#video_capturing" class="nav-link--gray">Video Capturing</a>
                 </li>
               </ul>
               <!-- END OF Sublist for Your first JavaFx app with OpenCV contents-->
             </li>
             <li class="nav-block__li">
-              <a href="#OpenCV_Basics"
-                 class="nav-link nav-link--align-to-left nav-link--bg">
+              <a href="#OpenCV_Basics" class="nav-link nav-link--align-to-left nav-link--bg">
                 OpenCV Basics
               </a>
               <!-- START OF Sublist for OpenCV Basics contents-->
               <ul class="nav-block__ul">
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#What_we_will_do_in_this_tutorial" class="nav-link--gray">What we will do in this
+                    tutorial</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Getting_started" class="nav-link--gray">Getting started</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Color_channel_checkbox" class="nav-link--gray">Color channel checkbox</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Load_an_Image_and_Add_it_to_the_Stream" class="nav-link--gray">Load an Image and Add it to
+                    the Stream</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Calculate_a_Histogram" class="nav-link--gray">Calculate a Histogram</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Draw_the_Histogram" class="nav-link--gray">Draw the Histogram</a>
                 </li>
               </ul>
               <!-- END OF Sublist for OpenCV Basics contents-->
             </li>
             <li class="nav-block__li">
-              <a href="#Face_Detection_and_Tracking"
-                 class="nav-link nav-link--align-to-left nav-link--bg">
+              <a href="#Face_Detection_and_Tracking" class="nav-link nav-link--align-to-left nav-link--bg">
                 Face Detection and Tracking
               </a>
               <!-- START OF Sublist for Face Detection and Tracking contents-->
               <ul class="nav-block__ul">
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Goal" class="nav-link--gray">Goal</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Cascade_Classifiers" class="nav-link--gray">Cascade Classifiers</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#What_we_will_do_in_this_tutorial" class="nav-link--gray">What we will do in this
+                    tutorial</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Getting_Started_Face_detection_and_tracking" class="nav-link--gray">Getting Started</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Loading_the_Classifiers" class="nav-link--gray">Loading the Classifiers</a>
                 </li>
                 <li class="nav-block__li">
-                  <a href=""
-                     class="nav-link--gray"></a>
+                  <a href="#Detection_and_Tracking" class="nav-link--gray">Detection and Tracking</a>
                 </li>
               </ul>
               <!-- END OF Sublist for Face Detection and Tracking contents-->
@@ -211,17 +184,14 @@
     <!--END OF Technical Documentation Page NavBar-->
 
     <div class="main-container__content">
-      <main id="main-doc"
-            class="main-doc-container">
+      <main id="main-doc" class="main-doc-container">
         <!--START OF First section: "Installing OpenCV for JAVA"-->
-        <section class="main-section"
-                 id="Installing_OpenCV_for_Java">
+        <section class="main-section" id="Installing_OpenCV_for_Java">
           <header class="main-section__header">
             Installing OpenCV for Java
           </header>
           <article class="main-section__article">
-            <div id="Introduction_to_OpenCV_for_Java"
-                 class="article-block">
+            <div id="Introduction_to_OpenCV_for_Java" class="article-block">
               <h1>Introduction to OpenCV for Java</h1>
               <p>
                 As of OpenCV 2.4.4, OpenCV supports desktop Java development.
@@ -229,29 +199,23 @@
                 operating system.
               </p>
             </div>
-            <div id="install_the_latest_java_version"
-                 class="article-block">
+            <div id="install_the_latest_java_version" class="article-block">
               <h1>Install the latest Java version</h1>
               <p>
                 Download the latest Java JDK from the
-                <a class="article-block__link"
-                   href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
-                   target="_blank"
-                   rel="noopener noreferrer">Oracle</a>
+                <a class="article-block__link" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+                  target="_blank" rel="noopener noreferrer">Oracle</a>
                 website. Now you should be able to install the last Java JDK
                 by opening the file just downloaded.
               </p>
             </div>
-            <div id="install_the_latest_eclipse_version"
-                 class="article-block">
+            <div id="install_the_latest_eclipse_version" class="article-block">
               <h1>Install the latest Eclipse version</h1>
               <p>
                 Download the latest Eclipse version at the
                 <span>
-                  <a class="article-block__link"
-                     href="https://www.eclipse.org/downloads/packages/"
-                     target="_blank"
-                     rel="noopener noreferrer">Eclipse Download page</a>
+                  <a class="article-block__link" href="https://www.eclipse.org/downloads/packages/" target="_blank"
+                    rel="noopener noreferrer">Eclipse Download page</a>
                 </span>
                 choosing the
                 <code>Eclipse IDE for Java Developers</code>
@@ -263,16 +227,13 @@
                 anything. Alternatively, you can try the Eclipse installer.
               </p>
             </div>
-            <div id="install_opencv_3.x_under_windows"
-                 class="article-block">
+            <div id="install_opencv_3.x_under_windows" class="article-block">
               <h1>Install OpenCV 3.x under Windows</h1>
               <p>
                 First of all you should download the OpenCV library (version
                 3.x) from
-                <a class="article-block__link"
-                   href="http://opencv.org/releases.html"
-                   target="_blank"
-                   rel="noopener noreferrer">here</a>.
+                <a class="article-block__link" href="http://opencv.org/releases.html" target="_blank"
+                  rel="noopener noreferrer">here</a>.
               </p>
               <p>
                 Then, extract the downloaded OpenCV file in a location of your
@@ -294,15 +255,12 @@
                 for OpenCV 3.0 and 330 for OpenCV 3.3.
               </p>
             </div>
-            <div id="install_opencv_3.x_under_mac"
-                 class="article-block">
+            <div id="install_opencv_3.x_under_mac" class="article-block">
               <h1>Install OpenCV 3.x under macOS</h1>
               <p>
                 The quickest way to obtain OpenCV under macOS is to use
-                <a class="article-block__link"
-                   href="https://brew.sh/"
-                   target="_blank"
-                   rel="noopener noreferrer">Homebrew</a>
+                <a class="article-block__link" href="https://brew.sh/" target="_blank"
+                  rel="noopener noreferrer">Homebrew</a>
                 . After installing Homebrew, you have to check whether the
                 XCode Command Line Tools are already installed on your system.
               </p>
@@ -344,8 +302,7 @@
                 and install it again.
               </p>
             </div>
-            <div id="install_opencv_3.x_under_linux"
-                 class="article-block">
+            <div id="install_opencv_3.x_under_linux" class="article-block">
               <h1>Install OpenCV 3.x under Linux</h1>
               <p>
                 Please, note: the following instructions are also useful if
@@ -355,21 +312,15 @@
               </p>
               <p>
                 As first step, download and install
-                <a class="article-block__link"
-                   href="https://cmake.org/download/"
-                   target="_blank"
-                   rel="noopener noreferrer">CMake</a>
+                <a class="article-block__link" href="https://cmake.org/download/" target="_blank"
+                  rel="noopener noreferrer">CMake</a>
                 and
-                <a class="article-block__link"
-                   href="http://ant.apache.org/"
-                   target="_blank"
-                   rel="noopener noreferrer">Apache Ant</a>
+                <a class="article-block__link" href="http://ant.apache.org/" target="_blank"
+                  rel="noopener noreferrer">Apache Ant</a>
                 , if you don’t have any of these. Download the OpenCV library
                 from
-                <a class="article-block__link"
-                   href="https://opencv.org/releases/"
-                   target="_blank"
-                   rel="noopener noreferrer">its website</a>
+                <a class="article-block__link" href="https://opencv.org/releases/" target="_blank"
+                  rel="noopener noreferrer">its website</a>
                 . Extract the downloaded OpenCV file in a location of your
                 choice and open CMake ( cmake-gui ). Put the location of the
                 extracted OpenCV library in the
@@ -382,8 +333,7 @@
               </p>
               <div class="container-for-img">
                 <img class="article-block__img"
-                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-00.png"
-                     alt="" />
+                  src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-00.png" alt="" />
               </div>
 
               <p>
@@ -446,8 +396,7 @@
               </p>
               <div class="container-for-img">
                 <img class="article-block__img"
-                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-01.png"
-                     alt="" />
+                  src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-01.png" alt="" />
               </div>
 
               <p>
@@ -468,8 +417,7 @@
                 and 330 for OpenCV 3.3. This is everything you need.
               </p>
             </div>
-            <div id="setup_opencv_for_java_in_eclipse"
-                 class="article-block">
+            <div id="setup_opencv_for_java_in_eclipse" class="article-block">
               <h1>Set up OpenCV for Java in Eclipse</h1>
               <p>
                 Open Eclipse and select a workspace of your choice. Create a
@@ -479,8 +427,7 @@
               </p>
               <div class="container-for-img">
                 <img class="article-block__img"
-                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-02.png"
-                     alt="" />
+                  src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-02.png" alt="" />
               </div>
 
               <p>
@@ -496,8 +443,7 @@
               </p>
               <div class="container-for-img">
                 <img class="article-block__img"
-                     src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-03.png"
-                     alt="" />
+                  src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/01-03.png" alt="" />
               </div>
 
               <p>
@@ -515,8 +461,7 @@
                 <code>ln -s libopencv_java300.so libopencv_java300.dylib</code>
               </p>
             </div>
-            <div id="setup_opencv_for_java_in_other_ides_experimental"
-                 class="article-block">
+            <div id="setup_opencv_for_java_in_other_ides_experimental" class="article-block">
               <h1>Set up OpenCV for Java in other IDEs (experimental)</h1>
               <p>
                 If you are using IntelliJ, you can specify the location of the
@@ -529,21 +474,18 @@
         <!--END OF First section: "Installing OpenCV for JAVA"-->
 
         <!--START OF Second section: "Your first Java app with OpenCV"-->
-        <section class="main-section"
-                 id="Your_first_Java_app_with_OpenCV">
+        <section class="main-section" id="Your_first_Java_app_with_OpenCV">
           <header class="main-section__header">
             Your first Java app with OpenCV
           </header>
-          <div id="a_java_application_with_opencv"
-               class="article-block">
+          <div id="a_java_application_with_opencv" class="article-block">
             <h1>A Java Application with OpenCV</h1>
             <p>
               This tutorial will guide you through the creation of a simple
               Java console application using the OpenCV library in Eclipse.
             </p>
           </div>
-          <div id="what_we_will_do_in_this_tutorial"
-               class="article-block">
+          <div id="what_we_will_do_in_this_tutorial" class="article-block">
             <h1>What we will do in this tutorial</h1>
             <p><strong>In this guide, we will:</strong></p>
             <ul>
@@ -553,25 +495,25 @@
               <li>Build and Run the application</li>
             </ul>
           </div>
-          <div id="create_a_new_project"
-               class="article-block">
+          <div id="create_a_new_project" class="article-block">
             <h1>Create a New Project</h1>
             <p>
               Open Eclipse and create a new Java project; open the
               <code>File</code> menu, go to <code>New</code> and click on
               <code>Java Project</code>.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-00.png"
-                 alt="Create new java project in eclipse" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-00.png"
+                alt="Create new java project in eclipse" />
+            </div>
             <p>
               In the
               <code>New Java Project</code> dialog write the name of your
               project and click on <code>Finish</code>.
             </p>
           </div>
-          <div id="add_a_user_library"
-               class="article-block">
+          <div id="add_a_user_library" class="article-block">
             <h1>Add a User Library</h1>
             <p>
               If you followed the previous tutorial (<code>Installing OpenCV for Java</code>), you should already have
@@ -582,19 +524,22 @@
               right-click on your project’s folder and go to
               <code>Build Path --> Add Libraries...</code>.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-01.png"
-                 alt="Add library to project" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-01.png"
+                alt="Add library to project" />
+            </div>
             <p>
               Select <code>User Libraries</code> and click on
               <code>Next</code>, check the checkbox of the OpenCV library and
               click <code>Finish</code>.
             </p>
-            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-02.png"
-                 alt="Select OpenCV user libary" />
+            <div class="container-for-img">
+              <img class="article-block__img" src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-02.png"
+                alt="Select OpenCV user libary" />
+            </div>
           </div>
-          <div id="create_a_simple_application"
-               class="article-block">
+          <div id="create_a_simple_application" class="article-block">
             <h1>Create a simple application</h1>
             <p>
               Now add a new Class to your project by right-clicking on your
@@ -604,7 +549,7 @@
               of our first application. Let’s start by defining the
               <code>main</code> method:
             </p>
-            <pre class="article-block__code black">
+            <pre class="article-block__code black padding overflow">
 
   public class HelloCV {
       public static void main(String[] args){
@@ -618,7 +563,7 @@
               First of all we need to load the OpenCV Native Library
               previously set on our project.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 System.loadLibrary(Core.NATIVE_LIBRARY_NAME);</pre>
             <p>Then we can define a new Mat.</p>
             <note>
@@ -628,13 +573,11 @@ System.loadLibrary(Core.NATIVE_LIBRARY_NAME);</pre>
                 real or complex-valued vectors and matrices, grayscale or
                 color images, voxel volumes, vector fields, point clouds,
                 tensors, histograms. For more details check out the OpenCV
-                <a class="article-block__link"
-                   href="http://docs.opencv.org/3.0.0/dc/d84/group__core__basic.html"
-                   target="_blank"
-                   rel="noopener noreferrer">page</a>.
+                <a class="article-block__link" href="http://docs.opencv.org/3.0.0/dc/d84/group__core__basic.html"
+                  target="_blank" rel="noopener noreferrer">page</a>.
               </p>
             </note>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);</pre>
             <p>
               The <code>Mat.eye</code> represents a identity matrix, we set
@@ -648,7 +591,7 @@ Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);</pre>
               click on the voice <code>Import...</code>. If you do that for
               all the variables we have added to the code the following rows:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;</pre>
@@ -656,36 +599,34 @@ import org.opencv.core.Mat;</pre>
               We can now try to build and run our application by clicking on
               the Run button. You should have the following output:
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-03.png"
-                 alt="My first Java app with OpenCV output" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/02-03.png"
+                alt="My first Java app with OpenCV output" />
+            </div>
+
             <p>
               The whole source code is available on
-              <a class="article-block__link"
-                 href="https://github.com/opencv-java/getting-started/blob/master/HelloCV/"
-                 target="_blank"
-                 rel="noopener noreferrer">GitHub</a>.
+              <a class="article-block__link" href="https://github.com/opencv-java/getting-started/blob/master/HelloCV/"
+                target="_blank" rel="noopener noreferrer">GitHub</a>.
             </p>
           </div>
         </section>
         <!--END OF Second section: "Your first Java app with OpenCV"-->
 
         <!--START OF Third section: "Your first JavaFx app with OpenCV"-->
-        <section class="main-section"
-                 id="Your_first_JavaFx_app_with_OpenCV">
+        <section class="main-section" id="Your_first_JavaFx_app_with_OpenCV">
           <header class="main-section__header">
             Your first JavaFx app with OpenCV
           </header>
-          <div id="a_javafx_application_with_opencv"
-               class="article-block">
+          <div id="a_javafx_application_with_opencv" class="article-block">
             <h1>A JavaFX application with OpenCV</h1>
             <p>
               This tutorial will guide you through the creation of a simple
               JavaFX GUI application using the OpenCV library in Eclipse.
             </p>
           </div>
-          <div id="what_we_will_do_in_this_tutorial"
-               class="article-block">
+          <div id="what_we_will_do_in_this_tutorial" class="article-block">
             <h1>What we will do in this tutorial</h1>
             <p><strong>In this guide, we will:</strong></p>
             <ul>
@@ -697,8 +638,7 @@ import org.opencv.core.Mat;</pre>
               <li>Write and Run our application.</li>
             </ul>
           </div>
-          <div id="your_first_application_in_javafx"
-               class="article-block">
+          <div id="your_first_application_in_javafx" class="article-block">
             <h1>Your First Application in JavaFX</h1>
             <p>
               This tutorial will guide you through the creation of a simple
@@ -706,43 +646,44 @@ import org.opencv.core.Mat;</pre>
             </p>
           </div>
 
-          <div id="installing_e(fx)clipse_plugin_and_scene_builder"
-               class="article-block">
+          <div id="installing_e(fx)clipse_plugin_and_scene_builder" class="article-block">
             <h1>Installing e(fx)clipse plugin and Scene Builder</h1>
             <p>
               In Eclipse, install the e(fx)clipse plugin, by following the
               guide at
-              <a class="article-block__link"
-                 href="http://www.eclipse.org/efxclipse/install.html#fortheambitious"
-                 target="_blank"
-                 rel="noopener noreferrer">e(fx)clipse website</a>. If you choose not to install such a plugin, you have
-              to
+              <a class="article-block__link" href="http://www.eclipse.org/efxclipse/install.html#fortheambitious"
+                target="_blank" rel="noopener noreferrer">e(fx)clipse website</a>. If you choose not to install such a
+              plugin, you have to
               create a traditional Java project, only. Download and install
               JavaFX Scene Builder 2.0 from
               <a class="article-block__link"
-                 href="http://www.oracle.com/technetwork/java/javafxscenebuilder-1x-archive-2199384.html"
-                 target="_blank"
-                 rel="noopener noreferrer">JavaFX Scene Builder Archive</a>.
+                href="http://www.oracle.com/technetwork/java/javafxscenebuilder-1x-archive-2199384.html" target="_blank"
+                rel="noopener noreferrer">JavaFX Scene Builder Archive</a>.
             </p>
             <p>
               Now you can create a new JavaFX project.
               <code>Go to File > New > Project...</code> and select
               <code>JavaFX project...</code>.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-00.png"
-                 alt="New Eclipse project" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-00.png"
+                alt="New Eclipse project" />
+            </div>
+
             <p>Choose a name for your project and click <code>Next</code>.</p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-01.png"
-                 alt="" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-01.png" alt="" />
+            </div>
             <p>
               Now add your OpenCV user library to your project and click
               <code>Next</code>.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-02.png"
-                 alt="" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-02.png" alt="" />
+            </div>
             <p>
               Choose a name for your package, for the FXML file and for the
               <em>Controller Class</em>. The FXML file will contain the
@@ -751,13 +692,13 @@ import org.opencv.core.Mat;</pre>
               which have to be called and managed when the user interacts with
               the GUI’s components.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-03.png"
-                 alt="" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-03.png" alt="" />
+            </div>
           </div>
 
-          <div id="working_with_scene_builder"
-               class="article-block">
+          <div id="working_with_scene_builder" class="article-block">
             <h1>Working with Scene Builder</h1>
             <p>
               If you have installed <em>Scene Builder</em> you can now right
@@ -779,9 +720,11 @@ import org.opencv.core.Mat;</pre>
               <em>BorderPane</em> lays out children in top, left, right,
               bottom, and center positions.
             </p>
-            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-04.png"
-                 alt=""
-                 class="article-block__img" />
+            <div class="container-for-img">
+              <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-04.png" alt=""
+                class="article-block__img" />
+            </div>
+
             <p>
               You can add a BorderPane by dragging from the
               <code>Container</code> menu a borderpane and then drop it in the
@@ -796,12 +739,15 @@ import org.opencv.core.Mat;</pre>
               and the id of the button (e.g. “start_btn”) in the
               <code>fx:id</code> field under the <code>Code</code> menu.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-05.png"
-                 alt="" />
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-06.png"
-                 alt="" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-05.png" alt="" />
+            </div>
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-06.png" alt="" />
+            </div>
+
             <p>
               We are going to need the id of the button later, in order to
               edit the button properties from our <em>Controller</em>‘s
@@ -813,9 +759,11 @@ import org.opencv.core.Mat;</pre>
               to preform in the field <code>OnAction</code> under the
               <code>Code</code> menu.
             </p>
-            <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-07.png"
-                 alt=""
-                 class="article-block__img" />
+            <div class="container-for-img">
+              <img src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-07.png" alt=""
+                class="article-block__img" />
+            </div>
+
             <p>
               Now, we shall add an ImageView component from the
               <code>Controls</code> menu into the
@@ -823,9 +771,10 @@ import org.opencv.core.Mat;</pre>
               of the image view (e.g. “currentFrame”), and add some margin to
               it.
             </p>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-08.png"
-                 alt="" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-08.png" alt="" />
+            </div>
             <p>
               Finally we have to tell which Controller class will mange the
               GUI, we can do so by adding our controller class name in the
@@ -840,8 +789,7 @@ import org.opencv.core.Mat;</pre>
             </p>
           </div>
 
-          <div id="key_concepts_in_javafx"
-               class="article-block">
+          <div id="key_concepts_in_javafx" class="article-block">
             <h1>Key Concepts in JavaFX</h1>
             <p>
               The <strong>Stage</strong> is where the application will be
@@ -852,19 +800,18 @@ import org.opencv.core.Mat;</pre>
               the Main class we have to pass to the start function our primary
               stage:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 public void start(Stage primaryStage)</pre>
             <p>
               and load the fxml file that will populate our stage, the root
               element of the scene and the controller class:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 FXMLLoader loader = new FXMLLoader(getClass().getResource("FXHelloCV.fxml"));
 BorderPane root = (BorderPane) loader.load();
 FXController controller = loader.getController();</pre>
           </div>
-          <div id="managing_gui_interactions_with_other_controller_class"
-               class="article-block">
+          <div id="managing_gui_interactions_with_other_controller_class" class="article-block">
             <h1>Managing GUI Interactions With the Controller Class</h1>
             <p>
               For our application we need to do basically two thing: control
@@ -872,7 +819,7 @@ FXController controller = loader.getController();</pre>
               we have to create a reference between the gui components and a
               variable used in our controller class:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 @FXML
 private Button button;
 @FXML
@@ -889,20 +836,19 @@ private ImageView currentFrame;</pre>
             </p>
             <p>for:</p>
             <pre
-                 class="article-block__code black padding overflow"><span><</span>Button fx:id="button" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="CENTER"<span>></span></pre>
+              class="article-block__code black padding overflow"><span><</span>Button fx:id="button" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" BorderPane.alignment="CENTER"<span>></span></pre>
             <p>we set:</p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 @FXML
 protected void startCamera(ActionEvent event) { ...</pre>
           </div>
-          <div id="video_capturing"
-               class="article-block">
+          <div id="video_capturing" class="article-block">
             <h1>Video Capturing</h1>
             <p>
               Essentially, all the functionalities required for video
               manipulation is integrated in the VideoCapture class.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 private VideoCapture capture = new VideoCapture();</pre>
             <p>
               This on itself builds on the FFmpeg open source library. A video
@@ -915,7 +861,7 @@ private VideoCapture capture = new VideoCapture();</pre>
               (i.e., a <code>`ScheduledExecutorService`</code>) that will open
               a background task every 33 <em>milliseconds</em>.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Runnable frameGrabber = new Runnable() { ... }
 this.timer = Executors.newSingleThreadScheduledExecutor();
 this.timer.scheduleAtFixedRate(frameGrabber, 0, 33, TimeUnit.MILLISECONDS);</pre>
@@ -923,34 +869,34 @@ this.timer.scheduleAtFixedRate(frameGrabber, 0, 33, TimeUnit.MILLISECONDS);</pre
               To check if the binding of the class to a video source was
               successful or not use the isOpened function:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 if (this.capture.isOpened()) { ... }</pre>
             <p>
               Closing the video is automatic when the objects destructor is
               called. However, if you want to close it before this you need to
               call its release function.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 this.capture.release();</pre>
             <p>
               The frames of the video are just simple images. Therefore, we
               just need to extract them from the VideoCapture object and put
               them inside a Mat one.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Mat frame = new Mat();</pre>
             <p>
               The video streams are sequential. You may get the frames one
               after another by the read or the overloaded >> operator.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 this.capture.read(frame);</pre>
             <p>
               Now we are going to convert our image from BGR to Grayscale
               format. OpenCV has a really nice function to do this kind of
               transformations:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2GRAY);</pre>
             <p>
               <strong>As you can see, cvtColor takes as arguments:</strong>
@@ -974,13 +920,13 @@ Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2GRAY);</pre>
               need to convert the Mat in a Image. We first create a buffer to
               store the Mat.
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 MatOfByte buffer = new MatOfByte();</pre>
             <p>
               Then we can put the frame into the buffer by using the imencode
               function:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Imgcodecs.imencode(".png", frame, buffer);</pre>
             <p>
               This encodes an image into a memory buffer. The function
@@ -1007,7 +953,7 @@ Imgcodecs.imencode(".png", frame, buffer);</pre>
               Once we filled the buffer we have to stream it into an Image by
               using <code>ByteArrayInputStream</code>:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 new Image(new ByteArrayInputStream(buffer.toArray()));</pre>
             <p>
               Now we can put the new image in the ImageView. With
@@ -1016,38 +962,649 @@ new Image(new ByteArrayInputStream(buffer.toArray()));</pre>
               the new frame in a second thread and refresh our ImageView in
               the main thread:
             </p>
-            <pre class="article-block__code black padding">
+            <pre class="article-block__code black padding overflow">
 Image imageToShow = grabFrame();
 Platform.runLater(new Runnable() {
         @Override public void run() { currentFrame.setImage(imageToShow); }
 });</pre>
-            <img class="article-block__img"
-                 src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-09.png"
-                 alt="JavaFx meets OpenCV" />
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/03-09.png"
+                alt="JavaFx meets OpenCV" />
+            </div>
             <p>
               The source code of the entire tutorial is available on
-              <a class="article-block__link"
-                 href="GitHub"
-                 target="_blank"
-                 rel="noopener noreferrer">GitHub</a>.
+              <a class="article-block__link" href="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>.
             </p>
           </div>
         </section>
         <!--END OF Third section: "Your first JavaFx app with OpenCV"-->
 
         <!--START OF Fourth section: "OpenCV Basics"-->
-        <section class="main-section"
-                 id="OpenCV_Basics">
+        <section class="main-section" id="OpenCV_Basics">
           <header class="main-section__header">OpenCV Basics</header>
+          <div id="What_we_will_do_in_this_tutorial" class="article-block">
+            <h1>What we will do in this tutorial</h1>
+            <p>In this guide, we will:</p>
+            <ul>
+              <li>
+                Create a basic checkbox interaction to alter the color of the
+                video stream.
+              </li>
+              <li>
+                Add a basic checkbox interaction to “alpha over” a logo to the
+                video stream.
+              </li>
+              <li>
+                Display the video stream histogram (both one and three
+                channels).
+              </li>
+            </ul>
+          </div>
+
+          <div id="Getting_started" class="article-block">
+            <h1>Getting started</h1>
+            <p>
+              For this tutorial we can create a new JavaFX project and build a
+              scene as the one realized in the previous one. So we’ve got a
+              window with a border pane in which:
+            </p>
+            <ul>
+              <li>
+                in the <strong>BOTTOM</strong> we have a button inside a
+                <em>HBox</em>:
+                <pre class="article-block__code padding black overflow">
+&lt;HBox alignment="CENTER" &gt;
+&lt;padding&gt;
+&lt;Insets top="25" right="25" bottom="25" left="25" /&gt;
+&lt;/padding&gt;
+&lt;Button fx:id="button" alignment="center" text="Start camera" onAction="#startCamera" /&gt;
+&lt;/HBox&gt;</pre>
+              </li>
+
+              <li>
+                in the <strong>CENTER</strong> we have a ImageView:
+                <pre class="article-block__code black padding">
+&lt;ImageView fx:id="currentFrame" /&gt;</pre>
+              </li>
+            </ul>
+          </div>
+
+          <div id="Color_channel_checkbox">
+            <h1>Color channel checkbox</h1>
+            <p>
+              Let’s open our fxml file with Scene Builder and add to the
+              <strong>RIGHT</strong> field of our BorderPane a vertical box
+              <code class="article-block__code">VBox</code>. A VBox lays out
+              its children in a single vertical column. If the VBox has a
+              border and/or padding set, then the contents will be layed out
+              within those insets. Also it will resize children (if resizable)
+              to their preferred heights and uses its
+              <code class="article-block__code">fillWidth</code> property to
+              determine whether to resize their widths to fill its own width
+              or keep their widths to their preferred (fillWidth defaults to
+              true). A <code class="article-block__code">HBox</code> works
+              just like a VBox but it lays out its children horizontally
+              instead of vertically.
+            </p>
+            <p>
+              Now we can put inside the VBox a new checkbox, change its text
+              to “Show in gray scale”, and set an id (e.g., “grayscale”).
+            </p>
+            <pre class="article-block__code black padding overflow">
+&lt;CheckBox fx:id="grayscale" text="Show in gray scale" /&gt;</pre>
+            <p>
+              Let’s also add a title to this section by putting a text before
+              our new checkbox, but still inside the VBox. Then, set its text
+              to “Controls” (we can find the text element under the Shapes
+              menu).
+            </p>
+            <pre class="article-block__code black padding overflow">
+&lt;Text text="Controls" /&gt;</pre>
+            <p>In the Scene Builder we now have:</p>
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/04-00.png"
+                alt="Scene Builder controls" />
+            </div>
+            <p>
+              The graphic interface is complete for the first task, now we
+              need to work on the controller; in the previous tutorial we
+              could control the number of channels displayed on screen with
+              the line:
+            </p>
+            <pre class="article-block__code black padding overflow">
+Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2GRAY);</pre>
+            <p>
+              In order to control this conversion with the check box, we have
+              to link the check box with a FXML variable:
+            </p>
+            <pre class="article-block__code black padding overflow">
+@FXML
+private CheckBox grayscale;</pre>
+            <p>
+              Now we can implement the control by adding a simple “if”
+              condition which will perform the conversion only if our check
+              box is checked:
+            </p>
+            <pre class="article-block__code black padding overflow">
+if (grayscale.isSelected())
+{
+Imgproc.cvtColor(frame, frame, Imgproc.COLOR_BGR2GRAY);
+}</pre>
+          </div>
+
+          <div id="Load_an_Image_and_Add_it_to_the_Stream" class="article-block">
+            <h1>Load an Image and Add it to the Stream</h1>
+            <p>
+              The next step is to add another check box which, if checked,
+              will trigger the display of an image over the camera stream.
+              Let’s start by adding the image to the project; create a new
+              folder in the root directory of your project and put the image
+              in there. In my project I have a
+              <code class="article-block__code">resources</code> folder with a
+              <code class="article-block__code">Poli.png</code> image. Go back
+              to Eclipse and refresh your project (you should have the new
+              folder in it). Let’s open the FXML file with Scene Builder and
+              add a new checkbox below the one that controls the stream
+              colors; we have to set the text, the name of the method in the
+              <code class="article-block__code">OnAction</code> field and an
+              id. In the code we will have for example:
+            </p>
+            <pre class="article-block__code black padding overflow">
+&lt;CheckBox fx:id="logoCheckBox" text="Show logo" onAction="#loadLogo" /&gt;</pre>
+            <p>
+              In the controller file we have to define a new variable
+              associated with the checkbox, the method set on the
+              <code class="article-block__code">OnAction</code> field and
+              adapt the code so that it will display the logo when the
+              checkbox is checked and the stream is on. Variable:
+            </p>
+            <pre class="article-block__code blakc padding overflow">
+@FXML
+private CheckBox logoCheckBox;</pre>
+            <p>
+              <code class="article-block__code">loadLogo</code> method: In
+              this method we are going to load the image whenever the
+              logoCheckBox id selected (checked). In order to load the image
+              we have to use a basic OpenCV function: imread. It returns a Mat
+              and takes the path of the image and a flag (> 0 RGB image, =0
+              grayscale, &lt;0 with the alpha channel).
+            </p>
+            <pre class="article-block__code black padding overflow">
+@FXML
+protected void loadLogo()
+{
+  if (logoCheckBox.isSelected())
+    this.logo = Imgcodecs.imread("resources/Poli.png");
+}</pre>
+            <p>Adapt the code.</p>
+            <p>
+              We are going to add some variants to the code in order to
+              display our logo in a specific region of the stream. This means
+              that for each frame capture, before the image could be converted
+              into 1 or 3 channels, we have to set a
+              <strong>ROI</strong> (region of interest) in which we want to
+              place the logo. Usually a <strong>ROI</strong> of an image is a
+              portion of it, we can define the ROI as a Rect object. Rect is a
+              template class for 2D rectangles, described by the following
+              parameters:
+            </p>
+            <ul>
+              <li>
+                Coordinates of the top-left corner. This is a default
+                interpretation of Rect.x and Rect.y in OpenCV. Though, in your
+                algorithms you may count x and y from the bottom-left corner.
+              </li>
+              <li>Rectangle width and height.</li>
+            </ul>
+            <pre class="article-block__code black padding overflow">
+Rect roi = new Rect(frame.cols()-logo.cols(), frame.rows()-logo.rows(), logo.cols(), logo.rows());</pre>
+            <p>
+              Then we have to take control of our Mat’s ROI, by doing so we
+              are able to “add” our logo in the disired area of the frame
+              defined by the ROI.
+            </p>
+            <pre class="article-block__code black padding overflow">
+Mat imageROI = frame.submat(roi);</pre>
+            <p>
+              We had to make this operation because we can only “add” Mats
+              with the same sizes; but how can we “add” two Mat together? We
+              have to keep in mind that our logo could have 4 channels (RGB +
+              alpha). So we could use two functions:
+              <code class="article-block__code">addWeighted</code> or
+              <code class="article-block__code">copyTo</code>. The
+              <code class="article-block__code">addWeighted</code> function
+              calculates the weighted sum of two arrays as follows:
+              <span class="article-block__code--formula">dst(I)= saturate(src1(I) alpha + src2(I)* beta +
+                gamma)*</span>
+            </p>
+
+            <p>
+              where I is a multi-dimensional index of array elements. In case
+              of multi-channel arrays, each channel is processed
+              independently. The function can be replaced with a matrix
+              expression:
+              <span class="article-block__code--formula">dst = src1*alpha + src2*beta + gamma</span>
+            </p>
+
+            <note>
+              <p class="article-block__note">
+                Saturation is not applied when the output array has the depth
+                <code class="article-block__code--white-bg">CV_32S</code>. You
+                may even get result of an incorrect sign in the case of
+                overflow.
+              </p>
+            </note>
+            <p><strong>Parameters:</strong></p>
+            <ul>
+              <li><strong>src1</strong> first input array.</li>
+              <li>
+                <strong>alpha</strong> weight of the first array elements.
+              </li>
+              <li>
+                <strong>src2</strong> second input array of the same size and
+                channel number as src1.
+              </li>
+              <li>
+                <strong>beta</strong> weight of the second array elements.
+              </li>
+              <li><strong>gamma</strong> scalar added to each sum.</li>
+              <li>
+                <strong>dst</strong> output array that has the same size and
+                number of channels as the input arrays.
+              </li>
+            </ul>
+            <p>So we’ll have:</p>
+            <pre class="article-block__code black padding overflow">
+Core.addWeighted(imageROI, 1.0, logo, 0.7, 0.0, imageROI);</pre>
+            <p>
+              The second method (<code>copyTo</code>) simply copies a Mat into
+              the other. We’ll have:
+            </p>
+            <pre class="article-block__code black white">
+Mat mask = logo.clone();
+logo.copyTo(imageROI, mask);</pre>
+            <p>
+              Everything we have done so far to add the logo to the image has
+              to perform only IF our checkbox is check and the image loading
+              process has ended successfully. So we have to add an if
+              condition:
+            </p>
+            <pre class="article-block__code black padding overflow">
+if (logoCheckBox.isSelected() && this.logo != null)
+{
+    Rect roi = new Rect(frame.cols() - logo.cols(), frame.rows() - logo.rows(), logo.cols(),logo.rows());
+    Mat imageROI = frame.submat(roi);
+    // add the logo: method #1
+              
+    Core.addWeighted(imageROI, 1.0, logo, 0.7, 0.0, imageROI);
+    // add the logo: method #2
+    // Mat mask = logo.clone();
+    // logo.copyTo(imageROI, mask);
+}</pre>
+          </div>
+
+          <div id="Calculate_a_Histogram">
+            TODO: Escribir la sección de Calculate a histogram
+            <h1>Calculate a Histogram</h1>
+            <p>
+              A histogram is a collected counts of data organized into a set
+              of predefined bins. In our case the data represents the
+              intensity of the pixel so it will have a range like (0, 256).
+            </p>
+            <p>
+              <strong>Since we know that the range of information value, we can
+                segment our range in subparts (called bins); let’s identify
+                some parts of the histogram:</strong>
+            </p>
+            <ul class="article-block__ul--numeral-style">
+              <li>
+                <strong>dims:</strong> The number of parameters you want to
+                collect data of.
+              </li>
+              <li>
+                <strong>bins:</strong> It is the number of subdivisions in
+                each dim. In our example, bins = 256.
+              </li>
+              <li>
+                <strong>range:</strong> The limits for the values to be
+                measured. In this case: range = [0,255].
+              </li>
+            </ul>
+            <p>
+              Our last goal is to display the histogram of the video stream
+              for either RGB or in grayscale. For this task we are going to
+              define a method in our controller class that takes a Mat (our
+              current frame) and a boolean that will flag if the frame is in
+              RGB or in grayscale, for example:
+            </p>
+            <p>
+              First thing we need to do is to divide the frame into other n
+              frames, where n represents the number of channels of which our
+              frame is composed. To do so we need to use the Core.split
+              function; it needs a source Mat and a List&lt;Mat&gt; where to
+              put the different channels. Obviously if the frame is in
+              grayscale the list will have just one element.
+            </p>
+            <p>
+              Before we could calculate the histogram of each channel we have
+              to prepare all the inputs that the calcHist function needs. The
+              functions calcHist calculates the histogram of one or more
+              arrays. The elements of a tuple used to increment a histogram
+              bin are taken from the corresponding input arrays at the same
+              location. Parameters:
+            </p>
+            <ul>
+              <li>
+                <strong>images</strong> Source arrays. They all should have
+                the same depth, CV_8U or CV_32F, and the same size. Each of
+                them can have an arbitrary number of channels.
+              </li>
+              <li>
+                <strong>channels</strong> List of the dims channels used to
+                compute the histogram. The first array channels are numerated
+                from 0 to images[0].channels()-1, the second array channels
+                are counted from images[0].channels() to images[0].channels()
+                + images[1].channels()-1, and so on.
+              </li>
+              <li>
+                <strong>mask</strong> Optional mask. If the matrix is not
+                empty, it must be an 8-bit array of the same size as
+                images[i]. The non-zero mask elements mark the array elements
+                counted in the histogram.
+              </li>
+              <li>
+                <strong>hist</strong> Output histogram, which is a dense or
+                sparse dims -dimensional array.
+              </li>
+              <li>
+                <strong>hist</strong> Array of histogram sizes in each
+                dimension.
+              </li>
+              <li>
+                <strong>ranges</strong> Array of the dims arrays of the
+                histogram bin boundaries in each dimension. When the histogram
+                is uniform (uniform =true), then for each dimension i it is
+                enough to specify the lower (inclusive) boundary L_0 of the
+                0-th histogram bin and the upper (exclusive) boundary
+                U_(histSize[i]-1) for the last histogram bin histSize[i]-1.
+                That is, in case of a uniform histogram each of ranges[i] is
+                an array of 2 elements. When the histogram is not uniform
+                (uniform=false), then each of ranges[i] contains histSize[i]+1
+                elements: L_0, U_0=L_1, U_1=L_2,...,
+                U_(histSize[i]-2)=L_(histSize[i]-1), U_(histSize[i]-1). The
+                array elements, that are not between L_0 and
+                U_(histSize[i]-1), are not counted in the histogram.
+              </li>
+              <li>
+                <strong>accumulate</strong> Accumulation flag. If it is set,
+                the histogram is not cleared in the beginning when it is
+                allocated. This feature enables you to compute a single
+                histogram from several sets of arrays, or to update the
+                histogram in time.
+              </li>
+            </ul>
+            <p>
+              The image will be our frame, we don’t need a mask and the last
+              flag will be false; thus we need to define the channels, the
+              hist, the <code>histSize</code> and the <code>ranges</code>:
+            </p>
+            <p>
+              In the RGB case we will need all of the hist defined, in the
+              grayscale case instead we will use just the
+              <code>hist_b</code> one. We are now ready to do the histogram
+              calculation:
+            </p>
+            <p>
+              where <code>gray</code> is the flag we passed to the
+              <code>showHistogram</code> method.
+            </p>
+          </div>
+
+          <div id="Draw_the_Histogram" class="article-block">
+            <h1>Draw the Histogram</h1>
+            <p>
+              Next step is to draw the calculated histogram in our GUI. Open
+              the fxml file with Scene Builder and add an ImageView above the
+              “Controls” text in the right of the BP and set its id:
+            </p>
+            <pre class="article-block__code black padding overflow">
+&lt;ImageView fx:id="histogram" /&gt;</pre>
+            <p>
+              Now back to the Controller class. Let’s add a global variable to
+              control the just added image view:
+            </p>
+            <pre class="article-block__code black padding">
+@FXML
+private ImageView histogram;</pre>
+            <p>
+              and continue to write the <code>showHistogram</code> method.
+              First thing first, let’s create an image to display the
+              histogram:
+            </p>
+            <pre class="article-block__code black padding overflow">
+int hist_w = 150;
+int hist_h = 150;
+int bin_w = (int) Math.round(hist_w / histSize.get(0, 0)[0]);
+Mat histImage = new Mat(hist_h, hist_w, CvType.CV_8UC3, new Scalar(0, 0, 0));</pre>
+            <p>
+              before drawing, we first normalize the histogram so its values
+              fall in the range indicated by the parameters entered:
+            </p>
+            <pre class="article-block__code black padding overflow">
+Core.normalize(hist_b, hist_b, 0, histImage.rows(), Core.NORM_MINMAX, -1, new Mat());
+if (!gray){
+   Core.normalize(hist_g, hist_g, 0, histImage.rows(), Core.NORM_MINMAX, -1, new Mat());
+   Core.normalize(hist_r, hist_r, 0, histImage.rows(), Core.NORM_MINMAX, -1, new Mat());
+}</pre>
+            <p>Now we can draw the histogram in our Mat:</p>
+            <pre class="article-block__code black padding overflow">
+for (int i = 1; i &lt; histSize.get(0, 0)[0]; i++){
+   Imgproc.line(histImage, new Point(bin_w * (i - 1), hist_h - Math.round(hist_b.get(i - 1, 0)[0])), new Point(bin_w * (i), hist_h - Math.round(hist_b.get(i, 0)[0])), new Scalar(255, 0, 0), 2, 8, 0);
+   if (!gray){
+      Imgproc.line(histImage, new Point(bin_w * (i - 1), hist_h - Math.round(hist_g.get(i - 1, 0)[0])),new Point(bin_w * (i), hist_h - Math.round(hist_g.get(i, 0)[0])), new Scalar(0, 255, 0), 2, 8, 0);
+      Imgproc.line(histImage, new Point(bin_w * (i - 1), hist_h - Math.round(hist_r.get(i - 1, 0)[0])),Math.round(hist_r.get(i, 0)[0])), new Scalar(0, 0, 255), 2, 8, 0);
+   }
+}</pre>
+            <p>
+              Let’s convert the obtained Mat to an Image with our method
+              mat2Image and update the ImageView with the returned Image:
+            </p>
+            <pre class="article-block__code black padding overflow">
+histo = mat2Image(histImage);
+histogram.setImage(histo);</pre>
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/04-01.png" alt="" />
+            </div>
+          </div>
         </section>
         <!--END OF Fourth section: "OpenCV Basics"-->
 
         <!--START OF Fifth section: "Face Dectection and Tracking"-->
-        <section class="main-section"
-                 id="Face_Detection_and_Tracking">
+        <section class="main-section" id="Face_Detection_and_Tracking">
           <header class="main-section__header">
             Face Detection and Tracking
           </header>
+          <div id="Goal" class="article-block">
+            <h1>Goal</h1>
+            <p>
+              In this tutorial we are going to use well-known classifiers that
+              have been already trained and distributed by OpenCV in order to
+              detect and track a moving face into a video stream.
+            </p>
+          </div>
+
+          <div id="Cascade_Classifiers" class="article-block">
+            <h1>Cascade Classifiers</h1>
+            <p>
+              The object recognition process (in our case, faces) is usually
+              efficient if it is based on the features take-over which include
+              additional information about the object class to be taken-over.
+              In this tutorial we are going to use the
+              <em>Haar-like</em> features and the
+              <em>Local Binary Patterns</em> (LBP) in order to encode the
+              contrasts highlighted by the human face and its spatial
+              relations with the other objects present in the picture. Usually
+              these features are extracted using a
+              <em>Cascade Classifier</em> which has to be trained in order to
+              recognize with precision different objects: the faces’
+              classification is going to be much different from the car’s
+              classification.
+            </p>
+          </div>
+
+          <div id="What_we_will_do_in_this_tutorial" class="article-block">
+            <h1>What we will do in this tutorial</h1>
+            <p><strong>In this guide, we will:</strong></p>
+            <ul>
+              <li>
+                Insert a checkbox to select the Haar Classifier, detect and
+                track a face, and draw a green rectangle around the detected
+                face.
+              </li>
+              <li>
+                Inesrt a checkbox to select the LBP Classifier, detect and
+                track a face, and draw a green rectangle around the detected
+                face.
+              </li>
+            </ul>
+          </div>
+
+          <div id="Getting_Started_Face_detection_and_tracking" class="article-block">
+            <h1>Getting Started</h1>
+            <p>
+              Let’s create a new JavaFX project. In Scene Builder set the
+              windows element so that we have a Border Pane with:
+            </p>
+            <ul>
+              <li>
+                on TOP a VBox a HBox and a separator. In the HBox we are
+                goning to need two checkboxes, the first one is to select the
+                Haar Classifier and the second one is to select the LBP
+                Classifier.
+                <pre class="article-block__code black padding overflow">
+&lt;CheckBox fx:id="haarClassifier" onAction="#haarSelected" text="Haar Classifier"/&gt;
+&lt;CheckBox fx:id="lbpClassifier" onAction="#lbpSelected" text="LBP Classifier"/&gt;</pre>
+              </li>
+
+              <li>
+                in the CENTRE we are going to put an ImageView for the web cam
+                stream.
+                <pre class="article-block__code black padding overflow">
+&lt;ImageView fx:id="originalFrame" /&gt;</pre>
+              </li>
+
+              <li>
+                on the BOTTOM we can add the usual button to start/stop the
+                stream
+                <pre class="article-block__code black padding overflow">
+&lt;Button fx:id="cameraButton" alignment="center" text="Start camera" onAction="#startCamera" disable="true" /&gt;</pre>
+              </li>
+            </ul>
+            <p>The gui will look something like this one:</p>
+            <div class="container-for-img">
+              <img class="article-block__img"
+                src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/08-00.png"
+                alt="Border pane output" />
+            </div>
+          </div>
+
+          <div id="Loading_the_Classifiers">
+            <h1>Loading the Classifiers</h1>
+            <p>
+              First of all we need to add a folder <code>resource</code> to
+              our project and put the classifiers in it. In order to use the
+              classifiers we need to load them from the resource folder, so
+              every time that we check one of the two checkboxes we will load
+              the correct classifier. To do so, let’s implement the
+              <code>OnAction</code> methods we already declared before:
+            </p>
+            <ul>
+              <li>
+                <code>haarSelected</code>
+                <ul class="article-block__li--no-style">
+                  <li>
+                    inside this method we are going to load the desired Haar
+                    Classifier (e.g.
+                    <code>haarcascade_frontalface_alt.xml</code>) as follows:
+                    <pre class="article-block__code black padding overflow">
+this.checkboxSelection("resources/lbpcascades/haarcascade_frontalface_alt.xml");
+...
+private void checkboxSelection(String... classifierPath)
+{
+        // load the classifier(s)
+        for (String xmlClassifier : classifierPath)
+        {
+                this.faceCascade.load(xmlClassifier);
+        }
+
+        // now the capture can start
+        this.cameraButton.setDisable(false);
+}</pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <code>lbpSelected</code>
+                <ul class="article-block__li--no-style">
+                  <li>
+                    for the LPB we can use the same method and change the path
+                    of the classifier to be loaded:
+                    <pre class="article-block__code black padding overflow">
+this.checkboxSelection("resources/lbpcascades/lbpcascade_frontalface.xml");</pre>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div id="Detection_and_Tracking" class="article-block">
+            <h1>Detection and Tracking</h1>
+            <p>Once we’ve loaded the classifiers we are ready to start the detection; 
+              we are going to implement the detection in the <code>detectAndDisplay</code> method. 
+              First of all we need to convert the frame in grayscale and equalize the 
+              histogram to improve the results:</p>
+              <pre class="article-block__code black padding overflow">Imgproc.cvtColor(frame, grayFrame, Imgproc.COLOR_BGR2GRAY);
+Imgproc.equalizeHist(grayFrame, grayFrame);</pre>
+            <p>Then we have to set the minimum size of the face to be detected (this required is 
+              need in the actual detection function). Let’s set the minimum size as the 20% of the frame height:</p>
+              <pre class="article-block__code black padding overflow">if (this.absoluteFaceSize == 0)
+{
+    int height = grayFrame.rows();
+    if (Math.round(height * 0.2f) > 0)
+    {
+            this.absoluteFaceSize = Math.round(height * 0.2f);
+    }
+}</pre>
+            <p>Now we can start the detection:</p>
+            <pre class="article-block__code black padding overflow">this.faceCascade.detectMultiScale(grayFrame, faces, 1.1, 2, 0 | Objdetect.CASCADE_SCALE_IMAGE, new Size(this.absoluteFaceSize, this.absoluteFaceSize), new Size());</pre>
+            <p>The <code>detectMultiScale</code> function detects objects of different sizes in the input image. The detected objects are returned as a list of rectangles. The parameters are:</p>
+            <ul>
+              <li><strong>image</strong> Matrix of the type CV_8U containing an image where objects are detected.</li>
+              <li><strong>objects</strong> Vector of rectangles where each rectangle contains the detected object.</li>
+              <li><strong>scaleFactor</strong> Parameter specifying how much the image size is reduced at each image scale.</li>
+              <li><strong>minNeighbors</strong>Parameter specifying how many neighbors each candidate rectangle should have to retain it.</li>
+              <li><strong>flags</strong>Parameter with the same meaning for an old cascade as in the function cvHaarDetectObjects. It is not used for a new cascade.</li>
+              <li><strong>minSize</strong>Minimum possible object size. Objects smaller than that are ignored.</li>
+              <li><strong>maxSize</strong>Maximum possible object size. Objects larger than that are ignored.</li>
+            </ul>
+            <p>So the result of the detection is going to be in the objects parameter or in our case <code>faces</code>.</p>
+            <p>Let’s put this result in an array of rects and draw them on the frame, by doing so we can display the detected face are:</p>
+            <pre class="article-block__code black padding overflow">Rect[] facesArray = faces.toArray();
+for (int i = 0; i &lt; facesArray.length; i++)
+    Imgproc.rectangle(frame, facesArray[i].tl(), facesArray[i].br(), new Scalar(0, 255, 0, 255), 3);</pre>
+            <p>As you can see we selected the color green with a transparent background: <code>Scalar(0, 255, 0, 255)</code>. <code>.tl()</code> and <code>.br()</code> stand for top-left and bottom-right and they represents the two opposite vertexes. The last parameter just set the thickness of the rectangle’s border.</p>
+            <p>The tracking part can be implemented by calling the <code>detectAndDisplay</code> method for each frame.</p>
+            <div class="container-for-img">
+              <img class="article-block__img" src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/08-01.png" alt="Detect and display method">
+            </div>
+            <div class="container-for-img">
+              <img class="article-block__img" src="https://opencv-java-tutorials.readthedocs.io/en/latest/_images/08-02.png" alt="Detect and display method-2">
+            </div>
+            <p>The source code of the entire tutorial is available on <a class="article-block__link" href="https://github.com/opencv-java/face-detection" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+          </div>
         </section>
         <!--END OF Fifth section: "Face Dectection and Tracking"-->
       </main>
@@ -1056,4 +1613,3 @@ Platform.runLater(new Runnable() {
 </body>
 
 </html>
-
